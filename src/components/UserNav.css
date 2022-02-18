@@ -15,13 +15,13 @@
 }
 
 img[alt="right-arrow"], img[alt="arrow-selected"] {
-    margin-left: 8rem;
+    margin-left: 3.4rem;
+    margin-top: 0.8rem;
 }
 
 .selected {
     background-color: #50459E;
     color: white;
-    box-shadow: 10px 10px 8px #888888;
 }
 
 img[alt="requests"] {
@@ -36,4 +36,9 @@ img[alt="dashboard"] {
 
 img[alt="configs"] {
     padding: 0.7rem;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
 }
