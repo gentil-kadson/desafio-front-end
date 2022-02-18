@@ -1,0 +1,39 @@
+#user-nav-container {
+    display: grid;
+    grid-template-rows: 3fr 5fr 3fr 1fr;
+    background: white;
+    height: 70vh;
+}
+
+.user-nav-buttons {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid purple;
+    width: fit-content;
+}
+
+img[alt="right-arrow"], img[alt="arrow-selected"] {
+    margin-left: 8rem;
+}
+
+.selected {
+    background-color: #50459E;
+    color: white;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+img[alt="requests"] {
+    background-color: #50459E;
+    border-radius: 20px;
+    padding: 0.7rem;
+}
+
+img[alt="dashboard"] {
+    padding: 0.7rem;
+}
+
+img[alt="configs"] {
+    padding: 0.7rem;
+}

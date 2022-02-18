@@ -52,7 +52,7 @@ input[type="text"]:hover {
     cursor: pointer;
 }
 
-input[type="submit"] {
+.login-button {
     font-size: 16px;
     color: white;
     background: #5B4DA7 0% 0% no-repeat padding-box;;
@@ -62,7 +62,7 @@ input[type="submit"] {
     border: none;
 }
 
-input[type="submit"]:hover {
+.login-button:hover {
     cursor: pointer;
 }
 
