@@ -1,0 +1,13 @@
+#warnings {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #EDECF5 0% 0% no-repeat padding-box;
+}
+
+.warning-title {
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}

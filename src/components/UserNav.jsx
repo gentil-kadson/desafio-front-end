@@ -6,6 +6,7 @@ import rightArrow from '../assets/images/right-arrow.svg'
 import arrowSelected from '../assets/images/arrow-selected.svg'
 import dashboard from '../assets/images/dashboard.svg'
 import configs from '../assets/images/configs.svg'
+import profilePicture from '../assets/images/gentil-kadson.jpg'
 
 function UserNav() {
     return(
@@ -26,7 +27,9 @@ function UserNav() {
             </div>
 
             <div id="user">
-                User stuff
+                <label htmlFor="user-page">Usuário</label>
+                <Link to="/user"><div className="items-container"><div className="profile-container"><img src={profilePicture} alt="profile" /></div>Gentil Kadson</div><img src={rightArrow} alt="right-arrow" /></Link>
+
             </div>
 
         </section>

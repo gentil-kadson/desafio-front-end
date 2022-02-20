@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/login"
+        path="/"
         element={
           <div id="form-container">
             <form action="/dashboard" method="POST  ">

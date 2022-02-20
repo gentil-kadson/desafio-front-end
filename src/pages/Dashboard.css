@@ -3,3 +3,19 @@
     grid-template-columns: 0.2fr 1fr;
 }
 
+#dashboard {
+    display: grid; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: 0.33fr 0.44fr 0.33fr;
+    background-color: white;
+    margin-left: 2.5rem;
+}
+
+/* img[alt="icon"] {
+    width: 20%;
+    height: 20%;
+    grid-row-start: 0;
+    grid-row-end: 1;
+} */
