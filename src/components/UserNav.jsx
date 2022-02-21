@@ -13,7 +13,7 @@ function UserNav() {
         <section id="user-nav-container">
             <div id="requests">
                 <label htmlFor="solicitacoes">Solicitações</label><br />
-                <Link to="/solicitacoes"><div className='items-container'><img src={plus} alt="requests" /><button className='user-nav-buttons'> Solicitações</button><img src={rightArrow} alt="right-arrow" /></div></Link>
+                <Link to="/solicitacoes"><div className='items-container'><img src={plus} alt="requests" /><button className='user-nav-buttons requests'>Solicitações</button><img src={rightArrow} alt="right-arrow" /></div></Link>
             </div>
 
             <div id="menu">
@@ -27,8 +27,8 @@ function UserNav() {
             </div>
 
             <div id="user">
-                <label htmlFor="user-page">Usuário</label>
-                <Link to="/user"><div className="items-container"><div className="profile-container"><img src={profilePicture} alt="profile" /></div>Gentil Kadson</div><img src={rightArrow} alt="right-arrow" /></Link>
+                <label htmlFor="user-page">Usuário</label><br />
+                <Link to="/user"><div className="items-container"><img src={profilePicture} alt="profile" /><button className='user-nav-buttons picture'>Gentil</button></div></Link>
 
             </div>
 

@@ -5,14 +5,15 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    /* border: 2px solid black; */
     display: grid;
+    /* height: 100vh; */
+    height: 100%;
     grid-template-rows: 0.2fr 1fr;
+    z-index: 0;
 }
 
 .main-dashboard-header {
     grid-row: 0 / 1;
-    /* border: 3px solid black; */
     display: flex;
     align-items: center;
 }

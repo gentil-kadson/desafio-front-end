@@ -3,15 +3,16 @@ import UserNav from "../components/UserNav"
 import DashboardNav from '../components/DashboardNav';
 import MainDashboard from '../components/MainDashboard';
 import Alert from '../components/Alert'
+import DashboardLogo from '../components/DashboardLogo';
 
 import './Dashboard.css'
 
-import icon from '../assets/images/logo.svg'
+
 
 function Dashboard() {
     return(
         <main id="content-container">
-             {/* <img src={icon} alt="icon" /> */}
+            <DashboardLogo />
             <UserNav />
             <section id="dashboard">
                 <DashboardNav />

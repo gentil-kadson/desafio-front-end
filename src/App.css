@@ -16,16 +16,16 @@ label {
 body {
     background-image: url('./assets/images/curve-patterns.svg');
     background-color: #F6F6F9;
+    margin: 0;
 }
 
 #form-container {
     margin: auto;
-    /* border: 3px solid black; */
     width: fit-content;
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 44rem;
+    height: 100vh;
     padding-bottom: 10rem;
     padding-top: 10rem;
     padding-left: 13rem;
