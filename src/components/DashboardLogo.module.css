@@ -2,6 +2,7 @@
     width: 8rem;
     height: 8rem;
     margin: auto;
+    grid-area: logo;
 }
 
 .image {

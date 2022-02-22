@@ -1,17 +1,20 @@
 #content-container {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 3rem;
 }
 
 #dashboard {
-    display: grid; 
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: -1;
-    grid-row-end: 3;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 0.2fr 1fr;
-    grid-template-columns: 0.33fr 0.44fr 0.33fr;
-    background-color: white;
-    margin-left: 2.5rem;
+    grid-template-areas: 
+    "dashboardNav dashboardNav"
+    "mainDashboard alerts";
+}
+
+.left-container {
+    width: fit-content;
 }
 

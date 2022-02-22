@@ -1,8 +1,5 @@
 #warnings {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-area: alerts;
     background: #EDECF5 0% 0% no-repeat padding-box;
 }
 

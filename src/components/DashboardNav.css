@@ -1,12 +1,9 @@
 #dashboard-nav {
-    grid-row-start: 0;
-    grid-row-end: 1;
-    grid-column-start: -4;
-    grid-column-end: 4;
     background-color: #5B4DA7;
     padding-bottom: 2rem;
     box-shadow: 0px 5px 10px rgb(201, 200, 200);
     z-index: 1;
+    grid-area: dashboardNav;
 }
 
 .aspects-header {
@@ -50,31 +47,3 @@ option {
     background-color: white;
     font-weight: bold;
 }
-
-/* img[alt="doritos1"], img[alt="doritos2"] {
-    position: absolute;
-}
-
-img[alt="doritos1"] {
-    right: 280px;
-    top: -130px;
-}
-
-img[alt="doritos2"] {
-    right: -480px;
-    top: -240px;
-} */
-
-/* @media (min-width=1280px) and (min-height: 720px) {
-    img[alt="doritos1"] {
-        right: 280px;
-        top: -130px;
-    }
-}
-
-@media (min-width=1920px) and (min-height=1080px) {
-    img[alt="doritos1"] {
-        right: 1100px;
-        top: -130px;
-    }
-} */

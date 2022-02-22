@@ -12,8 +12,10 @@ import './Dashboard.css'
 function Dashboard() {
     return(
         <main id="content-container">
-            <DashboardLogo />
-            <UserNav />
+            <section className="left-container">
+                <DashboardLogo />
+                <UserNav />
+            </section>
             <section id="dashboard">
                 <DashboardNav />
                 <MainDashboard />

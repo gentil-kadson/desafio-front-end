@@ -7,8 +7,9 @@
     margin-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    grid-column-start: 0;
-    grid-column-end: 1;
+    /* grid-column-start: 0;
+    grid-column-end: 1; */
+    grid-area: userNav;
     border-radius: 10px;
     box-shadow: 2px 3px 7px 2px rgb(201, 200, 200);
 }

@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 
 .main-dashboard-container {
-    grid-column-start: -4;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    display: grid;
-    /* height: 100vh; */
-    height: 100%;
-    grid-template-rows: 0.2fr 1fr;
+    grid-area: mainDashboard;
     z-index: 0;
+    background-color: white;
 }
 
 .main-dashboard-header {
-    grid-row: 0 / 1;
     display: flex;
     align-items: center;
 }
 
 #graphic, #details {
-    margin: auto;
+    margin-top: 1.5rem;
+    margin-left: auto;
     font-size: 22px;
     border: none;
     background-color: white;
@@ -37,7 +31,5 @@
 
 hr {
     background-color: #00000029;
-    grid-row-start: 1;
-    grid-row-end: 2;
     width: 50rem;
 }
