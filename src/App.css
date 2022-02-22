@@ -25,11 +25,11 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     padding-bottom: 10rem;
     padding-top: 10rem;
-    padding-left: 13rem;
-    padding-right: 13rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     background-color: white;
 }
 
@@ -41,7 +41,7 @@ form {
 
 input[type="text"] {
     height: 2.5rem;
-    width: 40rem;
+    width: 30rem;
     background: #5B4DA70A 0% 0% no-repeat padding-box;
     border: 1px solid #D5D5D5;
     border-radius: 8px;
