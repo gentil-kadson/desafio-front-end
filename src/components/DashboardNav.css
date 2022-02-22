@@ -1,6 +1,6 @@
 #dashboard-nav {
     background-color: #5B4DA7;
-    padding-bottom: 2rem;
+    padding-bottom: 1.6rem;
     box-shadow: 0px 5px 10px rgb(201, 200, 200);
     z-index: 1;
     grid-area: dashboardNav;
@@ -47,3 +47,21 @@ option {
     background-color: white;
     font-weight: bold;
 }
+
+.breadcrumb-container > p {
+    color: white;
+    margin-top: 0.5rem;
+}
+
+/* img[alt="doritos1"], img[alt="doritos2"] {
+    position: absolute;
+}
+
+img[alt="doritos2"] {
+    left: 75rem;
+}
+
+img[alt="doritos1"] {
+    left: 55rem;
+    bottom: 43rem;
+} */
