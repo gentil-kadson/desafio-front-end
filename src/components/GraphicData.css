@@ -1,0 +1,21 @@
+.data-container {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "graphicTitle" "graphicTitle"
+    "graphic" "dataTable";
+    gap: 2rem;
+}
+
+.graphic-title {
+    grid-area: graphicTitle;
+}
+
+.graphic-container {
+    grid-area: graphic;
+}
+
+.table-container {
+    grid-area: dataTable;
+}

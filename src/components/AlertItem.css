@@ -1,0 +1,20 @@
+.alert-container {
+    display: grid;
+    grid-template-rows: 44% 33% 33%;
+    grid-template-areas: 
+    "description"
+    "category"
+    "value";
+}
+
+.alert-description {
+    grid-area: description;
+}
+
+.alert-category-container {
+    grid-area: category;
+}
+
+.value-container {
+    grid-area: value;
+}
