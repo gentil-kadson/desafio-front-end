@@ -1,10 +1,15 @@
 .alert-container {
     display: grid;
-    grid-template-rows: 44% 33% 33%;
+    grid-template-rows: 40% 20% 33%;
     grid-template-areas: 
     "description"
     "category"
     "value";
+    gap: 0.7rem;
+    background-color: white;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 1rem;
 }
 
 .alert-description {
@@ -17,4 +22,15 @@
 
 .value-container {
     grid-area: value;
+}
+
+i {
+    display: block;
+}
+
+.category {
+    font-size: 12px;
+    background-color: #5B4DA7;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }

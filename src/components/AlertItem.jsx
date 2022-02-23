@@ -4,13 +4,17 @@ import React from 'react'
 function AlertItem(props) {
     return(
         <div className="alert-container">
-            <p className="alert-description">ALERT DESCRIPTION HERE</p>
+            <p className="alert-description">{props.message}</p>
             
-            <div className="alert-category-container"></div>
+            <div className="alert-category-container">
+                {props.tags.map((tag, index) => {
+                    return <span key={index+1} className="category">{tag}</span>
+                })}
+            </div>
             
             <div className="value-container">
-                <i className="value-title"></i>
-                <span className="value-quantity"></span>
+                <i className="value-title">Valor líquido</i>
+                <span className="value-quantity">R$ {props.value}</span>
             </div>
         </div>
     ); 
