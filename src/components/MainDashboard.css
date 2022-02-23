@@ -33,3 +33,18 @@ hr {
     background-color: #00000029;
     width: 50rem;
 }
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    #graphic, #details {
+        margin-top: 1.5rem;
+        font-size: 16px;
+        border: none;
+        background-color: white;
+    }
+
+    #graphic {
+        margin-left: 7.5rem;
+    }
+    
+}
+

@@ -80,3 +80,51 @@ label {
 .picture {
     margin: auto;
 }
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    #user-nav-container {
+        width: 15rem;
+    }
+
+    .items-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        margin-top: 1.7rem;
+    }
+
+    img[alt="dashboard"], img[alt="configs"], img[alt="requests"] {
+        padding: 0.4rem;
+    }
+
+    .items-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        margin-top: 0.5rem;
+    }
+
+    label {
+        font-size: 12px;
+        margin-left: 1rem;
+    }
+
+    .user-nav-buttons {
+        text-align: left;
+        font-size: 12px;
+        grid-column-start: 0;
+        grid-column-end: 3;
+        background-color: white;
+        border: none;
+        width: fit-content;
+    }
+
+    .selected {
+        background-color: #50459E;
+        color: white;
+    }
+
+    img[alt="right-arrow"], img[alt="arrow-selected"] {
+        margin-left: 1.5rem;
+        margin-top: 0.6rem;
+    }
+
+}

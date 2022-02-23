@@ -14,7 +14,7 @@ function AlertItem(props) {
             
             <div className="value-container">
                 <i className="value-title">Valor líquido</i>
-                <span className="value-quantity">R$ {props.value}</span>
+                <span className="value-quantity"><span className="currency">R$</span> <span className='currency-value'>{props.value}</span></span>
             </div>
         </div>
     ); 

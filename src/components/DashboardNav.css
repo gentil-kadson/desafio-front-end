@@ -65,3 +65,20 @@ img[alt="doritos1"] {
     left: 55rem;
     bottom: 43rem;
 } */
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    .breadcrumb-container > p {
+        color: white;
+        margin-top: -0.5rem;
+    }
+
+    #person {
+        background: #FFFFFF33 0% 0% no-repeat padding-box;
+        padding-left: 0.3rem;
+        padding-right: 5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-radius: 5px;
+        color: white;
+    }
+}

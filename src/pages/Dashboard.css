@@ -18,3 +18,9 @@
     width: fit-content;
 }
 
+@media (max-width: 1920px) and (max-height: 1080px) {
+    #dashboard {
+        grid-template-columns: 1.9fr 1fr;
+    }
+}
+

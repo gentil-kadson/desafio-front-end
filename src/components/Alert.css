@@ -9,3 +9,10 @@
     margin-left: 2rem;
 }
 
+@media (max-width: 1920px) and (max-height: 1080px) {
+    .warning-title {
+        font-size: 18px;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }
+}

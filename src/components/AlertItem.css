@@ -1,27 +1,33 @@
 .alert-container {
     display: grid;
-    grid-template-rows: 40% 20% 33%;
+    grid-template-rows: 40% 20% 40%;
     grid-template-areas: 
     "description"
     "category"
     "value";
-    gap: 0.7rem;
     background-color: white;
     height: fit-content;
     border-radius: 8px;
+    padding-bottom: 2rem;
     margin: 1rem;
 }
 
 .alert-description {
     grid-area: description;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .alert-category-container {
     grid-area: category;
+    margin-top: 0.2rem;
 }
 
 .value-container {
     grid-area: value;
+    margin-left: 1rem;
 }
 
 i {
@@ -32,5 +38,33 @@ i {
     font-size: 12px;
     background-color: #5B4DA7;
     margin-left: 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.value-title {
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.currency-value {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.currency {
+    font-weight: lighter;
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    .alert-category-container {
+        margin-top: 0.3rem;
+    }
+
+    .alert-container {
+        padding-bottom: 2.5rem;
+    }
+
+
 }

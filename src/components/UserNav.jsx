@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import './UserNav.css'
 import { Link } from 'react-router-dom'
 import plus from '../assets/images/plus.svg'
@@ -6,9 +7,22 @@ import rightArrow from '../assets/images/right-arrow.svg'
 import arrowSelected from '../assets/images/arrow-selected.svg'
 import dashboard from '../assets/images/dashboard.svg'
 import configs from '../assets/images/configs.svg'
-import profilePicture from '../assets/images/gentil-kadson.jpg'
 
 function UserNav() {
+    const [userData, setUserData ] = useState([])
+
+    useEffect(() => {
+        fetch('https://621584abc9c6ebd3ce2a353c.mockapi.io/api/ps/me')
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            setUserData(data.data)
+        })
+    }, [])
+
+    console.log(userData)
+
     return(
         <section id="user-nav-container">
             <div id="requests">
@@ -28,7 +42,7 @@ function UserNav() {
 
             <div id="user">
                 <label htmlFor="user-page">Usuário</label><br />
-                <Link to="/user"><div className="items-container"><img src={profilePicture} alt="profile" /><button className='user-nav-buttons picture'>Gentil</button></div></Link>
+                <Link to="/user"><div className="items-container"><img src={userData.avatar} alt="profile" /><button className='user-nav-buttons picture'>{userData.name}</button></div></Link>
 
             </div>
 
