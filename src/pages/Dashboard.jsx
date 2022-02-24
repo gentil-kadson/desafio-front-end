@@ -9,7 +9,7 @@ import './Dashboard.css'
 
 
 
-function Dashboard() {
+function Dashboard(props) {
     return(
         <main id="content-container">
             <section className="left-container">
@@ -18,7 +18,9 @@ function Dashboard() {
             </section>
             <section id="dashboard">
                 <DashboardNav />
-                <MainDashboard />
+                <MainDashboard>
+                    {props.children}
+                </MainDashboard>
                 <Alert />
             </section>
         </main>

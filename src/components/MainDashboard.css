@@ -4,11 +4,17 @@
     grid-area: mainDashboard;
     z-index: 0;
     background-color: white;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    grid-template-areas: 
+    "dashboardHeader"
+    "dashboardContent";
 }
 
 .main-dashboard-header {
     display: flex;
     align-items: center;
+    grid-area: dashboardHeader;
 }
 
 #graphic, #details {

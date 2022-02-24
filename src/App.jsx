@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import Logo from "./assets/images/logo.svg";
 import Dashboard from "./pages/Dashboard";
+import Details from "./components/Details";
+import GraphicData from "./components/GraphicData";
 
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -44,6 +46,10 @@ function App() {
       />
 
       <Route path="/dashboard" element={<Dashboard />}/>
+
+      <Route path="/graphic" element={<Dashboard> <GraphicData /> </Dashboard>}></Route>
+
+      <Route path="/details" element={<Dashboard> <Details /> </Dashboard>}/>
     </Routes>
   );
 }

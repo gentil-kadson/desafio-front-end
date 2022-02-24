@@ -1,14 +1,17 @@
+import { useState, useEffect } from 'react'
 import React from 'react'
 import './GraphicData.css'
 
 function GraphicData() {
+
+
     return(
         <div className="data-container">
             <h2 className="graphic-title">TITLE</h2>
             <div className="graphic-container">
 
             </div>
-            <div className="table-container">
+            <div className="graphic-table-container">
 
             </div>
         </div>
