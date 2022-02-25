@@ -21,8 +21,6 @@ function UserNav() {
         })
     }, [])
 
-    console.log(userData)
-
     return(
         <section id="user-nav-container">
             <div id="requests">

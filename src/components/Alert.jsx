@@ -16,9 +16,6 @@ function Alert() {
     });
   }, [])
 
-
-  console.log(isData);
-
   return (
     <aside id="warnings">
       <h1 className="warning-title">Alertas</h1>
