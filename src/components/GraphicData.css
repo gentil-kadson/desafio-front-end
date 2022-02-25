@@ -1,26 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+
 .data-container {
     display: grid;
-    grid-template-rows: 1% 99%;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-rows: 5% 95%;
     grid-template-columns: 30% 70%;
     grid-template-areas: 
-    "graphicTitle" "graphicTitle"
-    "graphic" "dataTable";
-    gap: 2rem;
+    "graphicTitle graphicTitle"
+    "graphic dataTable";
     grid-area: dashboardContent;
+    border: 1px solid black;
+    box-shadow: 2px 3px 7px 2px rgb(201, 200, 200);
 }
 
 .graphic-title {
+    font-size: 13px;
     grid-area: graphicTitle;
+    height: fit-content;
+    margin-left: 1rem;
+    font-weight: 700;
 }
 
 .graphic-container {
+    height: fit-content;
     grid-area: graphic;
 }
 
-.table-container {
+.graphic-table-container {
+    height: fit-content;
     grid-area: dataTable;
 }
-
 .graphic-title, .graphic-container, .graphic-table-container {
     border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
 }
