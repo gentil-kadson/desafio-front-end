@@ -10,6 +10,7 @@ import './Dashboard.css'
 
 
 function Dashboard(props) {
+
     return(
         <main id="content-container">
             <section className="left-container">

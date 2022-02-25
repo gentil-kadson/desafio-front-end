@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+
+.data-container {
+    display: grid;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: fit-content;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "graphicTitle graphicTitle"
+    "graphic dataTable";
+    grid-area: dashboardContent;
+    /* border: 1px solid black; */
+    box-shadow: 2px 3px 7px 2px rgb(201, 200, 200);
+}
+
+.graphic-title {
+    font-size: 13px;
+    grid-area: graphicTitle;
+    height: fit-content;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+.graphic-container {
+    height: fit-content;
+    margin: auto;
+    grid-area: graphic;
+    margin-top: 2rem;
+}
+
+.graphic-table-container {
+    margin-top: 2rem;
+    height: fit-content;
+    grid-area: dataTable;
+}
+.graphic-title, .graphic-container, .graphic-table-container {
+    /* border: 1px solid black; */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.chart-tr {
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+.percentage {
+    margin-left: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.real {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.color1, .color2, .color3, .color4, .color5 {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+}
+
+.color1 {
+    background-color: #80CAC6;
+}
+
+.color2 {
+    background-color: #EDB662;
+}
+
+.color3 {
+    background-color: #DF4764;
+}
+
+.color4 {
+    background-color: #C4487D;
+}
+
+.color5 {
+    background-color: #2B2D44;
+}
+
+.grey {
+    opacity: 0.8;
+}
+
+.total-real {
+    opacity: 0.8;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    td {
+        padding-bottom: 0.05rem;
+        padding-top: 0.05rem;
+    }
+}

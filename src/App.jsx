@@ -4,6 +4,7 @@ import Logo from "./assets/images/logo.svg";
 import Dashboard from "./pages/Dashboard";
 import Details from "./components/Details";
 import FirstGraphicData from "./components/FirstGraphicData";
+import SecondGraphicData from "./components/SecondGraphicData";
 
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -47,7 +48,7 @@ function App() {
 
       <Route path="/dashboard" element={<Dashboard />}/>
 
-      <Route path="/graphic" element={<Dashboard> <FirstGraphicData /> </Dashboard>}></Route>
+      <Route path="/graphic" element={<Dashboard> <FirstGraphicData/></Dashboard>}></Route>
 
       <Route path="/details" element={<Dashboard> <Details /> </Dashboard>}/>
     </Routes>

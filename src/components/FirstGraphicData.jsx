@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import './FirstGraphicData.css'
 import ApexCharts from 'apexcharts'
+import ReactApexChart from 'apexcharts'
 
-function GraphicData(props) {
+function FirstGraphicData() {
     const [tableData, setTableData] = useState([])
 
     useEffect(() => {
@@ -47,7 +48,6 @@ function GraphicData(props) {
     const chart = new ApexCharts(document.querySelector('.graphic-container'), options)
     chart.render()
 
-
     return(
         <div className="data-container">
             <h2 className="graphic-title">RESUMO DAS NOTAS</h2>
@@ -80,4 +80,4 @@ function GraphicData(props) {
     ); 
 }
 
-export default GraphicData 
+export default FirstGraphicData 
