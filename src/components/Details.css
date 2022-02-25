@@ -44,10 +44,10 @@ table {
     border-collapse: collapse;
 }
 
-tr:nth-child(even) {
+.details-tr:nth-child(even) {
     background-color: #F7F8FA;
 }
 
-tr, th {
+.details-tr, th {
   padding: 0.5rem;
 }

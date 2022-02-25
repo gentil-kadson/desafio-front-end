@@ -3,7 +3,7 @@ import "./App.css";
 import Logo from "./assets/images/logo.svg";
 import Dashboard from "./pages/Dashboard";
 import Details from "./components/Details";
-import GraphicData from "./components/GraphicData";
+import FirstGraphicData from "./components/FirstGraphicData";
 
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -47,7 +47,7 @@ function App() {
 
       <Route path="/dashboard" element={<Dashboard />}/>
 
-      <Route path="/graphic" element={<Dashboard> <GraphicData /> </Dashboard>}></Route>
+      <Route path="/graphic" element={<Dashboard> <FirstGraphicData /> </Dashboard>}></Route>
 
       <Route path="/details" element={<Dashboard> <Details /> </Dashboard>}/>
     </Routes>

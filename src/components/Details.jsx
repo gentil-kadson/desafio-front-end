@@ -29,7 +29,7 @@ function Details() {
                     </thead>
                     <tbody>
                         {tableData.map(tableValues => {
-                            return <tr key={tableValues.id}>
+                            return <tr key={tableValues.id} className="details-tr">
                                 <td key={tableValues.id} className="id">{tableValues.id}</td>
                                 <td key={tableValues.value}>R$ {tableValues.value}</td>
                                 <td key={tableValues.createdAt}>{tableValues.createdAt}</td>
