@@ -10,7 +10,7 @@ function MainDashboard(props) {
     return(
         <section className="main-dashboard-container">
             <section className="main-dashboard-header">
-                <Link to="/graphic"><button id='graphic' ref={graphicClass}> Gráficos</button></Link>
+                <Link to="/graphics"><button id='graphic' ref={graphicClass}> Gráficos</button></Link>
                 <Link to="/details"><button id="details" ref={detailsClass}>Detalhamento</button></Link>
             </section>
             {props.children}

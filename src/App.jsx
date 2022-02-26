@@ -4,20 +4,17 @@ import Dashboard from "./pages/Dashboard";
 import Details from "./components/Details";
 import FirstGraphicData from "./components/FirstGraphicData";
 import LoginForm from "./components/LoginForm";
-
 import { Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<div id="form-container"> <LoginForm /> </div>}/>
+      <Routes>
+        <Route path="/" element={<div id="form-container"> <LoginForm /> </div>}/>
 
-      <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/graphics" element={<Dashboard> <FirstGraphicData/> </Dashboard>}></Route>
 
-      <Route path="/graphic" element={<Dashboard> <FirstGraphicData/> </Dashboard>}></Route>
-
-      <Route path="/details" element={<Dashboard> <Details /> </Dashboard>}/>
-    </Routes>
+        <Route path="/details" element={<Dashboard> <Details /> </Dashboard>}/>
+      </Routes>
   );
 }
 
